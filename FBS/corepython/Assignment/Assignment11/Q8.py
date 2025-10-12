@@ -6,11 +6,12 @@ def snake_board():
         row = []
         for j in range(i * 10 + 1, i * 10 + 11):
             row.append(j)
-        if(i % 2 == 0):
+        if(i % 2 != 0):
             row.reverse()
             board.append(row)
         else:
             board.append(row)
     print(board)
+
 
 snake_board()
